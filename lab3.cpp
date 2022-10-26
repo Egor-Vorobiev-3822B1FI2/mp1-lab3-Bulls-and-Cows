@@ -82,43 +82,10 @@ int main()
 		}
 
 
-		switch (n)
+		for (int i = 0; i < n; ++i)
 		{
-		case(2):
-			Umas[1] = Uvar % 10;
+			Umas[(n - 1) - i] = Uvar % 10;
 			Uvar /= 10;
-			Umas[0] = Uvar % 10;
-			break;
-
-		case(3):
-			Umas[2] = Uvar % 10;
-			Uvar /= 10;
-			Umas[1] = Uvar % 10;
-			Uvar /= 10;
-			Umas[0] = Uvar % 10;
-			break;
-
-		case(4):
-			Umas[3] = Uvar % 10;
-			Uvar /= 10;
-			Umas[2] = Uvar % 10;
-			Uvar /= 10;
-			Umas[1] = Uvar % 10;
-			Uvar /= 10;
-			Umas[0] = Uvar % 10;
-			break;
-
-		case(5):
-			Umas[4] = Uvar % 10;
-			Uvar /= 10;
-			Umas[3] = Uvar % 10;
-			Uvar /= 10;
-			Umas[2] = Uvar % 10;
-			Uvar /= 10;
-			Umas[1] = Uvar % 10;
-			Uvar /= 10;
-			Umas[0] = Uvar % 10;
-			break;
 		}
 		//Конец ввода пользователем варианта
 
